@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script type="text/javascript" src="check.js"></script>
+    </head>
+    <body>
+        <center>
+        <div style="box-sizing: border-box;">
+            <form name="form1" action="" onsubmit="check()">
+                Device Id: <input type="text" id="devid" >
+                <span id="dev_id" ></span><br>
+                Device Name: <input type="text"  id="devname">
+                <span id="dev_name"></span><br>
+                Price: <input type="text" id="price" >
+                <span id="_price"></span><br>
+                Seller: <input type="text"  id="seller" >
+                <span id="_seller"></span><br>
+                Address: <input type="text" id="address">
+                <span id="_addrs"></span><br>
+                <input type="submit" value="Submit" onclick="addrow()">
+                <input type="reset" value="reset"><br>
+            </form>
+        </div>
+            <br>
+            <br>
+            <br>
+            <table id="data" style="width: 100%">
+                <caption>Data Inserted in fields</caption><br>
+                <tr>
+                    <th>Device Id</th>
+                    <th>Device Name</th>
+                    <th>Price</th>
+                    <th>Seller</th>
+                    <th>Address</th>
+                </tr>
+            </table>
+        </center>
+        <script type="text/javascript" src="addrow.js"></script>         
+    </body>
+</html>
