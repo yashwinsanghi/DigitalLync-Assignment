@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <style>
+            .tooltip{
+                position: relative;
+                display: inline-block;
+            }
+            .tooltip .tooltiptext{
+                visibility: hidden;
+                width: 100px;
+                background-color: black;
+                color: #ffffff;
+                border-radius: 6px;
+                padding: 5px 0;
+
+                /*Positioning the tooltip*/
+                position: absolute;
+                z-index: 1;
+                top: 100%;
+                left: 50%;
+                margin-left: -50px;
+            }
+            .tooltip:hover .tooltiptext
+            {
+                visibility: visible;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <input type="text"  id="u_name" placeholder="enter name" >
+            <div class="tooltip">
+                <img src="like.png" onclick="insert('like')" onmouseover="display('like')">
+                <span id="likecount">0</span>
+                <span class="tooltiptext" id="like">Hi there</span>
+            </div>
+            <div class="tooltip">
+                    <img src="love.png" onclick="insert('love')" onmouseover="display('love')">
+                    <span id="lovecount">0</span>
+                    <span class="tooltiptext" id="love"></span>
+            </div>
+            <div class="tooltip">
+                <img src="haha.png" onclick="insert('haha')" onmouseover="display('haha')">
+                <span id="hahacount">0</span>
+                <span class="tooltiptext" id="haha"></span>
+            </div>
+            <div class="tooltip">
+                <img src="wow.png" onclick="insert('wow')" onmouseover="display('wow')">
+                <span id="wowcount">0</span>
+                <span class="tooltiptext" id="wow"></span>
+            </div>
+            <div class="tooltip">
+                    <img src="sad.png"  onclick="insert('sad')" onmouseover="display('sad')">
+                    <span id="sadcount">0</span>
+                    <span class="tooltiptext" id="sad"></span>
+            </div>
+            <div class="tooltip">
+                    <img src="angry.png" onclick="insert('angry')" onmouseover="display('angry')">
+                    <span id="angrycount">0</span>
+                    <span class="tooltiptext" id="angry"></span>
+                </div>
+        </form>
+        <script src="logics.js"></script>
+    </body>
+</html>
+
